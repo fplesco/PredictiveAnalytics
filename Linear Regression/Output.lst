@@ -1,0 +1,230 @@
+*------------------------------------------------------------*
+User:                u59400693
+Date:                March 26, 2022
+Time:                08:35:13
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+            Measurement    Frequency
+Role           Level         Count
+ 
+INPUT        INTERVAL           3
+REJECTED     INTERVAL          10
+REJECTED     NOMINAL            1
+TARGET       INTERVAL           1
+ 
+ 
+ 
+ 
+Predicted and decision variables
+ 
+Type         Variable         Label
+ 
+TARGET        medv
+PREDICTED     P_medv     Predicted: medv
+RESIDUAL      R_medv     Residual: medv
+ 
+ 
+ 
+ 
+ 
+The DMREG Procedure
+ 
+               Model Information
+ 
+Training Data Set             WORK.EM_DMREG.VIEW
+DMDB Catalog                  WORK.REG_DMDB
+Target Variable               medv
+Target Measurement Level      Interval
+Error                         Normal
+Link Function                 Identity
+Number of Model Parameters    4
+Number of Observations        304
+ 
+ 
+                             Analysis of Variance
+ 
+                                   Sum of
+Source                 DF         Squares     Mean Square    F Value    Pr > F
+ 
+Model                   3           12698     4232.811149     132.81    <.0001
+Error                 300     9561.219941       31.870733
+Corrected Total       303           22260
+ 
+ 
+              Model Fit Statistics
+ 
+R-Square        0.5705     Adj R-Sq        0.5662
+AIC          1056.3266     BIC          1058.4330
+SBC          1071.1948     C(p)            4.0000
+ 
+ 
+           Analysis of Maximum Likelihood Estimates
+ 
+                               Standard
+Parameter    DF    Estimate       Error    t Value    Pr > |t|
+ 
+Intercept     1    -27.2947      3.0813      -8.86      <.0001
+chas          1      3.7899      1.2568       3.02      0.0028
+crim          1     -0.2496      0.0359      -6.96      <.0001
+rm            1      8.0035      0.4857      16.48      <.0001
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Fit Statistics
+ 
+Target=medv Target Label=' '
+ 
+   Fit
+Statistics    Statistics Label                    Train    Validation       Test
+ 
+ _AIC_        Akaike's Information Criterion    1056.33          .           .
+ _ASE_        Average Squared Error               31.45        30.40       99.37
+ _AVERR_      Average Error Function              31.45        30.40       99.37
+ _DFE_        Degrees of Freedom for Error       300.00          .           .
+ _DFM_        Model Degrees of Freedom             4.00          .           .
+ _DFT_        Total Degrees of Freedom           304.00          .           .
+ _DIV_        Divisor for ASE                    304.00       152.00       50.00
+ _ERR_        Error Function                    9561.22      4620.70     4968.66
+ _FPE_        Final Prediction Error              32.29          .           .
+ _MAX_        Maximum Absolute Error              28.55        17.72       38.74
+ _MSE_        Mean Square Error                   31.87        30.40       99.37
+ _NOBS_       Sum of Frequencies                 304.00       152.00       50.00
+ _NW_         Number of Estimate Weights           4.00          .           .
+ _RASE_       Root Average Sum of Squares          5.61         5.51        9.97
+ _RFPE_       Root Final Prediction Error          5.68          .           .
+ _RMSE_       Root Mean Squared Error              5.65         5.51        9.97
+ _SBC_        Schwarz's Bayesian Criterion      1071.19          .           .
+ _SSE_        Sum of Squared Errors             9561.22      4620.70     4968.66
+ _SUMW_       Sum of Case Weights Times Freq     304.00       152.00       50.00
+ 
+ 
+ 
+ 
+Assessment Score Rankings
+ 
+Data Role=TRAIN Target Variable=medv Target Label=' '
+ 
+           Number of       Mean        Mean
+Depth    Observations     Target    Predicted
+ 
+   5          16         43.7688     37.5293
+  10          15         33.1800     30.6487
+  15          15         29.9467     28.8280
+  20          15         27.8467     26.8744
+  25          15         25.7800     25.4719
+  30          16         22.0938     24.6983
+  35          15         21.7600     24.1238
+  40          15         21.2600     23.6387
+  45          15         21.0400     22.8260
+  50          15         21.6400     21.9871
+  55          16         20.4188     21.4783
+  60          15         18.0933     21.0257
+  65          15         20.3133     20.6372
+  70          15         19.0800     20.1396
+  75          15         18.7733     19.7535
+  80          16         18.7500     19.3898
+  85          15         17.6067     18.4311
+  90          15         17.5133     16.8750
+  95          15         14.0133     14.5886
+ 100          15         11.3533      5.4153
+ 
+ 
+Data Role=VALIDATE Target Variable=medv Target Label=' '
+ 
+           Number of       Mean        Mean
+Depth    Observations     Target    Predicted
+ 
+   5           8         44.9750     38.6344
+  10           8         42.0000     33.5185
+  15           7         33.1286     30.4865
+  20           8         28.6000     27.8028
+  25           7         24.6286     26.1666
+  30           8         21.6250     25.1628
+  35           8         23.5500     24.0843
+  40           7         22.4571     23.2397
+  45           8         21.1375     22.8665
+  50           7         20.2429     22.3306
+  55           8         19.3000     21.9302
+  60           8         18.1250     21.2883
+  65           7         18.2857     20.6703
+  70           8         16.8375     20.1692
+  75           7         19.9000     19.4734
+  80           8         18.1250     18.7338
+  85           8         16.4625     17.8112
+  90           7         10.9857     16.7036
+  95           8         15.9750     14.5400
+ 100           7         13.6429      8.1787
+ 
+ 
+ 
+ 
+Assessment Score Distribution
+ 
+Data Role=TRAIN Target Variable=medv Target Label=' '
+ 
+   Range for          Mean        Mean        Number of      Model
+   Predicted         Target    Predicted    Observations     Score
+ 
+43.608 -  45.899    21.9000     45.8992           1         44.7534
+41.316 -  43.608    50.0000     42.7753           2         42.4619
+39.025 -  41.316    46.8333     39.6601           3         40.1704
+36.733 -  39.025    50.0000     38.9664           1         37.8789
+34.442 -  36.733    44.3857     35.2385           7         35.5873
+32.150 -  34.442    44.0000     32.3599           1         33.2958
+29.859 -  32.150    33.3588     30.6860          17         31.0043
+27.567 -  29.859    29.4625     28.6083          16         28.7128
+25.275 -  27.567    26.6120     26.1827          25         26.4213
+22.984 -  25.275    22.1038     24.1524          53         24.1297
+20.692 -  22.984    20.2985     21.6081          65         21.8382
+18.401 -  20.692    18.8695     19.7395          59         19.5467
+16.109 -  18.401    17.3727     17.4943          22         17.2552
+13.818 -  16.109    14.8667     15.3840          12         14.9637
+11.526 -  13.818    12.5000     13.2321           5         12.6721
+9.235 -  11.526      8.4000     10.0635           3         10.3806
+6.943 -  9.235       8.8000      7.6337           2          8.0891
+4.652 -  6.943      13.2750      6.1832           4          5.7976
+2.360 -  4.652       9.6500      3.2502           2          3.5061
+0.069 -  2.360      13.7750      1.1347           4          1.2145
+ 
+ 
+Data Role=VALIDATE Target Variable=medv Target Label=' '
+ 
+   Range for          Mean        Mean        Number of      Model
+   Predicted         Target    Predicted    Observations     Score
+ 
+40.137 -  42.216    50.0000     42.2156           1         41.1765
+38.059 -  40.137    46.4750     38.6519           4         39.0984
+35.981 -  38.059    40.3750     37.3026           4         37.0203
+33.903 -  35.981    48.3500     34.9049           2         34.9421
+31.825 -  33.903    40.3400     32.2759           5         32.8640
+29.747 -  31.825    33.2833     30.6622           6         30.7859
+27.669 -  29.747    31.1400     28.7897           5         28.7077
+25.591 -  27.669    24.8600     26.5515          10         26.6296
+23.512 -  25.591    22.9889     24.6190          18         24.5515
+21.434 -  23.512    20.6438     22.4583          32         22.4734
+19.356 -  21.434    17.4625     20.4261          24         20.3952
+17.278 -  19.356    18.0579     18.4154          19         18.3171
+15.200 -  17.278    13.2800     16.4568          10         16.2390
+13.122 -  15.200    15.5333     14.4221           3         14.1609
+11.044 -  13.122    15.0200     12.0035           5         12.0827
+8.966 -  11.044     13.8000      9.1980           1         10.0046
+4.809 -  6.887      10.0000      6.3967           2          5.8484
+0.653 -  2.731      11.9000      0.6530           1          1.6921
