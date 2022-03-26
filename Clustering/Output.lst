@@ -1,0 +1,42 @@
+*------------------------------------------------------------*
+User:                u59400693
+Date:                March 26, 2022
+Time:                09:11:07
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+            Measurement    Frequency
+Role           Level         Count
+ 
+INPUT        INTERVAL          4
+REJECTED     INTERVAL          1
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Importance
+ 
+                                          Number of    Number of
+                                          Splitting    Surrogate
+  Variable Name            Label            Rules        Rules      Importance
+ 
+petal_length__cm_    petal length (cm)        0            5          1.00000
+petal_width__cm_     petal width (cm)         2            2          0.97590
+sepal_length__cm_    sepal length (cm)        1            2          0.96185
+sepal_width__cm_     sepal width (cm)         2            3          0.93891
