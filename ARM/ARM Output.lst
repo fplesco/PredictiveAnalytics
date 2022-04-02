@@ -1,0 +1,123 @@
+*------------------------------------------------------------*
+User:                u59400693
+Date:                April 02, 2022
+Time:                19:13:00
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+Role         Level         Count
+ 
+ID         INTERVAL          1
+TARGET     NOMINAL           1
+ 
+ 
+ 
+ 
+Association Report
+ 
+              Expected
+             Confidence    Confidence    Support              Transaction
+Relations       (%)           (%)          (%)        Lift       Count       Rule                                                      Left Hand of Rule
+ 
+      4         10.70         20.51        2.28       1.92       89.00       yogurt & rolls/buns ==> whole milk & sausage              yogurt & rolls/buns
+      4         11.13         21.34        2.28       1.92       89.00       whole milk & sausage ==> yogurt & rolls/buns              whole milk & sausage
+      4          8.23         15.16        2.28       1.84       89.00       yogurt & whole milk ==> sausage & rolls/buns              yogurt & whole milk
+      4         15.06         27.73        2.28       1.84       89.00       sausage & rolls/buns ==> yogurt & whole milk              sausage & rolls/buns
+      4         10.70         19.19        2.31       1.79       90.00       yogurt & other vegetables ==> whole milk & sausage        yogurt & other vegetables
+      4         12.03         21.58        2.31       1.79       90.00       whole milk & sausage ==> yogurt & other vegetables        whole milk & sausage
+      4         17.86         30.27        2.28       1.70       89.00       yogurt & sausage ==> whole milk & rolls/buns              yogurt & sausage
+      4          7.54         12.79        2.28       1.70       89.00       whole milk & rolls/buns ==> yogurt & sausage              whole milk & rolls/buns
+      4         20.60         34.63        2.28       1.68       89.00       yogurt & whole milk & rolls/buns ==> sausage              yogurt & whole milk & rolls/buns
+      4          6.59         11.08        2.28       1.68       89.00       sausage ==> yogurt & whole milk & rolls/buns              sausage
+      4         14.67         24.46        2.62       1.67      102.00       whole milk & sausage ==> rolls/buns & other vegetables    whole milk & sausage
+      4         10.70         17.83        2.62       1.67      102.00       rolls/buns & other vegetables ==> whole milk & sausage    rolls/buns & other vegetables
+      4          8.23         13.67        2.62       1.66      102.00       whole milk & other vegetables ==> sausage & rolls/buns    whole milk & other vegetables
+      4         19.14         31.78        2.62       1.66      102.00       sausage & rolls/buns ==> whole milk & other vegetables    sausage & rolls/buns
+      4         28.30         46.84        2.28       1.66       89.00       whole milk & sausage & rolls/buns ==> yogurt              whole milk & sausage & rolls/buns
+      4          9.29         15.33        2.31       1.65       90.00       yogurt & whole milk ==> sausage & other vegetables        yogurt & whole milk
+      4         15.06         24.86        2.31       1.65       90.00       sausage & other vegetables ==> yogurt & whole milk        sausage & other vegetables
+      4         28.30         45.92        2.31       1.62       90.00       whole milk & sausage & other vegetables ==> yogurt        whole milk & sausage & other vegetables
+      4         11.13         17.96        3.44       1.61      134.00       whole milk & other vegetables ==> yogurt & rolls/buns     whole milk & other vegetables
+      4         19.14         30.88        3.44       1.61      134.00       yogurt & rolls/buns ==> whole milk & other vegetables     yogurt & rolls/buns
+      4         17.86         28.57        3.44       1.60      134.00       yogurt & other vegetables ==> whole milk & rolls/buns     yogurt & other vegetables
+      4         12.03         19.25        3.44       1.60      134.00       whole milk & rolls/buns ==> yogurt & other vegetables     whole milk & rolls/buns
+      4          7.54         12.06        2.31       1.60       90.00       whole milk & other vegetables ==> yogurt & sausage        whole milk & other vegetables
+      4         19.14         30.61        2.31       1.60       90.00       yogurt & sausage ==> whole milk & other vegetables        yogurt & sausage
+      3         17.75         28.32        2.46       1.60       96.00       whole milk & pip fruit ==> pastry                         whole milk & pip fruit
+ 
+ 
+                                    Rule Item                                                                                                                 Rule
+Right Hand of Rule                  1             Rule Item 2                  Rule Item 3                  Rule Item 4                  Rule Item 5         Index
+ 
+whole milk & sausage                yogurt        rolls/buns                   ========================>    whole milk                   sausage                1
+yogurt & rolls/buns                 whole milk    sausage                      ========================>    yogurt                       rolls/buns             2
+sausage & rolls/buns                yogurt        whole milk                   ========================>    sausage                      rolls/buns             3
+yogurt & whole milk                 sausage       rolls/buns                   ========================>    yogurt                       whole milk             4
+whole milk & sausage                yogurt        other vegetables             ========================>    whole milk                   sausage                5
+yogurt & other vegetables           whole milk    sausage                      ========================>    yogurt                       other vegetables       6
+whole milk & rolls/buns             yogurt        sausage                      ========================>    whole milk                   rolls/buns             7
+yogurt & sausage                    whole milk    rolls/buns                   ========================>    yogurt                       sausage                8
+sausage                             yogurt        whole milk                   rolls/buns                   ========================>    sausage                9
+yogurt & whole milk & rolls/buns    sausage       ========================>    yogurt                       whole milk                   rolls/buns            10
+rolls/buns & other vegetables       whole milk    sausage                      ========================>    rolls/buns                   other vegetables      11
+whole milk & sausage                rolls/buns    other vegetables             ========================>    whole milk                   sausage               12
+sausage & rolls/buns                whole milk    other vegetables             ========================>    sausage                      rolls/buns            13
+whole milk & other vegetables       sausage       rolls/buns                   ========================>    whole milk                   other vegetables      14
+yogurt                              whole milk    sausage                      rolls/buns                   ========================>    yogurt                15
+sausage & other vegetables          yogurt        whole milk                   ========================>    sausage                      other vegetables      16
+yogurt & whole milk                 sausage       other vegetables             ========================>    yogurt                       whole milk            17
+yogurt                              whole milk    sausage                      other vegetables             ========================>    yogurt                18
+yogurt & rolls/buns                 whole milk    other vegetables             ========================>    yogurt                       rolls/buns            19
+whole milk & other vegetables       yogurt        rolls/buns                   ========================>    whole milk                   other vegetables      20
+whole milk & rolls/buns             yogurt        other vegetables             ========================>    whole milk                   rolls/buns            21
+yogurt & other vegetables           whole milk    rolls/buns                   ========================>    yogurt                       other vegetables      22
+yogurt & sausage                    whole milk    other vegetables             ========================>    yogurt                       sausage               23
+whole milk & other vegetables       yogurt        sausage                      ========================>    whole milk                   other vegetables      24
+pastry                              whole milk    pip fruit                    ========================>    pastry                                             25
+ 
+ 
+ 
+ 
+Rule Statistics
+ 
+The MEANS Procedure
+ 
+Variable    Label                          Minimum         Maximum            Mean
+----------------------------------------------------------------------------------
+EXP_CONF    Expected Confidence(%)       6.5931247      45.8183684      18.7180605
+CONF        Confidence(%)               10.1980924      65.6862745      27.0125010
+SUPPORT     Support(%)                   2.2832222       5.6182658       2.8698050
+LIFT        Lift                         1.3449109       1.9169291       1.4620675
+----------------------------------------------------------------------------------
+ 
+ 
+ 
+Sequence Report
+ 
+The FREQ Procedure
+ 
+                          Relations
+ 
+                                     Cumulative    Cumulative
+SET_SIZE    Frequency     Percent     Frequency      Percent
+-------------------------------------------------------------
+       2          11        5.50            11         5.50
+       3         116       58.00           127        63.50
+       4          73       36.50           200       100.00
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
