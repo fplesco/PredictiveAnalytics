@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><_ROOT_ EMVERSION="15.1" ORIENTATION="HORIZONTAL">
+<Workspace>
+<NODES>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="FileImport" ID="FIMPORT" X="75" Y="46" DESCRIPTION="File Import" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="FIMPORT">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMSAMP.Fimport.SOURCE" ImportType="Local" GuessRows="500" Delimiter="," NameRow="Y" SkipRows="0" MaxRows="1000000" MaxCols="10000" FileType="csv" Role="TRAIN" ForceRun="N" Summarize="N" AdvancedAdvisor="N" RunAction="Train" Component="FileImport" IFileName="C:\Users\fples\Documents\GitHub\PredictiveAnalytics\KNN Regression\insurance.csv" AccessTable="NoTableName" UserID="NoUserID" Password="NoPassword">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="bmi" AttributeName="ROLE" AttributeValue="TARGET"/>
+</EmVariableAttributes>
+<EmTargetAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<VARIABLESETDELTA Type="EXTERNAL" Extension="txt">
+<Data><![CDATA[
+if NAME=&quot;bmi&quot; then do;
+ROLE=&quot;TARGET&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+DROP=&quot;N&quot;;
+end;
+]]>
+</Data>
+</VARIABLESETDELTA>
+<DELTACODE Type="EXTERNAL" Extension="txt">
+<Data><![CDATA[
+if NAME=&quot;bmi&quot; then do;
+ROLE=&quot;TARGET&quot;;
+LEVEL=&quot;INTERVAL&quot;;
+ORDER=&quot;&quot;;
+end;
+drop DROP;
+]]>
+</Data>
+</DELTACODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.MBR.CLASS" COMPONENT="MBR" ID="MBR" X="524" Y="45" DESCRIPTION="MBR" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="MBR">
+<PROPERTIES NumberOfNeighbors="7" Epsilon="0" Buckets="8" Method="SCAN" Weighted="Y" ShowNodes="N" Neighbors="Y" ForceRun="N" RunAction="Train" Component="MBR">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes>
+<bmi>
+<DecData Table="EMWS1.MBR_bmi_DD">
+<Data>
+<Obs BMI="16"/>
+<Obs BMI="53.1"/>
+<Obs BMI="30.857570093"/>
+</Data>
+<Metadata>
+<Variable NAME="bmi" LABEL="" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecData>
+<DecMeta Table="EMWS1.MBR_bmi_DM">
+<Data>
+<Obs _TYPE_="MATRIX" VARIABLE="" LABEL="" FORMAT="" LEVEL="PROFIT" TYPE="" COST="" USE="N" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="TARGET" VARIABLE="bmi" LABEL="" FORMAT="BEST12.0" LEVEL="INTERVAL" TYPE="N" COST="" USE="" MIN="16" MEAN="30.857570093" MAX="53.1"/>
+<Obs _TYPE_="PREDICTED" VARIABLE="P_bmi" LABEL="Predicted: bmi" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="RESIDUAL" VARIABLE="R_bmi" LABEL="Residual: bmi" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+</Data>
+<Metadata>
+<Variable NAME="_TYPE_" LABEL="Type" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="VARIABLE" LABEL="Variable" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LABEL" LABEL="Label" LENGTH="256" FORMAT="" TYPE="C"/>
+<Variable NAME="FORMAT" LABEL="Format" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LEVEL" LABEL="Measurement Level" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="TYPE" LABEL="Type" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="COST" LABEL="Cost" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="USE" LABEL="Use" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="MIN" LABEL="Minimum" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MEAN" LABEL="Mean" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MAX" LABEL="Maximum" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecMeta>
+</bmi>
+</EmTargetAttributes>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMSAMP.EMDPART.CLASS" COMPONENT="Partition" ID="Part" X="308" Y="46" DESCRIPTION="Data Partition" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="Part">
+<PROPERTIES Method="DEFAULT" TrainPct="40" ValidatePct="40" TestPct="20" RandomSeed="12345" OutputType="DATA" IntervalDistribution="Y" ClassDistribution="Y" ForceRun="N" RunAction="Train" Component="Partition">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+</NODES>
+<CONNECTIONS>
+<CONNECTION FROM="FIMPORT" TO="Part"/>
+<CONNECTION FROM="Part" TO="MBR"/>
+</CONNECTIONS>
+<NOTES>
+<DATA><![CDATA[
+
+]]>
+</DATA>
+</NOTES>
+</Workspace>
+</_ROOT_>
