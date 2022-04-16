@@ -1,0 +1,248 @@
+*------------------------------------------------------------*
+User:                u59400693
+Date:                15 April 2022
+Time:                17:32:01
+*------------------------------------------------------------*
+* Training Output
+*------------------------------------------------------------*
+ 
+ 
+ 
+ 
+Variable Summary
+ 
+          Measurement    Frequency
+ Role        Level         Count
+ 
+TARGET      BINARY           1
+ 
+ 
+ 
+ 
+ 
+                                                                                           BINNED_KS_
+                                                                  _KS_PROB_                   PROB_
+Obs    TARGET       TARGETLABEL       _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     REP_A16    Replacement: A16    0.856     0.712    0.548      0.376        0.548        0.438
+ 
+ 
+ 
+ 
+ 
+                                                                     _VKS_              _VBINNED_
+                                                                     PROB_     _VKS_     KS_PROB_
+Obs    TARGET       TARGETLABEL       _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     REP_A16    Replacement: A16     0.83       0.66     0.533     0.563     0.522      0.656
+ 
+ 
+ 
+ 
+ 
+                                                                     _TKS_              _TBINNED_
+                                                                     PROB_     _TKS_     KS_PROB_
+Obs    TARGET       TARGETLABEL       _TAUR_    _TGINI_     TKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     REP_A16    Replacement: A16     0.877     0.754     0.697     0.376     0.636      0.406
+ 
+ 
+ 
+ 
+ 
+                                                                                           BINNED_KS_
+                                                                  _KS_PROB_                   PROB_
+Obs    TARGET       TARGETLABEL       _AUR_    _GINI_      KS       CUTOFF     _KS_BIN_      CUTOFF
+ 
+ 1     REP_A16    Replacement: A16    0.883     0.766    0.623      0.473        0.609        0.413
+ 
+ 
+ 
+ 
+ 
+                                                                     _VKS_              _VBINNED_
+                                                                     PROB_     _VKS_     KS_PROB_
+Obs    TARGET       TARGETLABEL       _VAUR_    _VGINI_     VKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     REP_A16    Replacement: A16     0.858     0.716     0.652      0.49     0.641      0.542
+ 
+ 
+ 
+ 
+ 
+                                                                     _TKS_              _TBINNED_
+                                                                     PROB_     _TKS_     KS_PROB_
+Obs    TARGET       TARGETLABEL       _TAUR_    _TGINI_     TKS     CUTOFF_     BIN_     CUTOFF_
+ 
+ 1     REP_A16    Replacement: A16     0.876     0.752     0.697     0.431     0.636       0.76
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics
+Model Selection based on Train: Misclassification Rate (_MISC_)
+ 
+                                                              Train:     Valid:
+                                              Train:         Average    Average          Valid:
+Selected    Model     Model             Misclassification    Squared    Squared    Misclassification
+ Model      Node      Description              Rate           Error      Error            Rate
+ 
+   Y        Neural    Neural Network         0.19771         0.13650    0.14674         0.17714
+            MBR       MBR                    0.23496         0.15186    0.16527         0.24000
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Fit Statistics Table
+Target: REP_A16
+ 
+Data Role=Train
+ 
+Statistics                                                         Neural        MBR
+ 
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff      0.413      0.438
+Train: Kolmogorov-Smirnov Statistic                                 0.623      0.548
+Train: Akaike's Information Criterion                             491.020    323.834
+Train: Average Squared Error                                        0.137      0.152
+Train: Roc Index                                                    0.883      0.856
+Train: Average Error Function                                       0.414      0.452
+Train: Cumulative Percent Captured Response                        19.298     18.806
+Train: Percent Captured Response                                    8.772      8.631
+Selection Criterion: Train: Misclassification Rate                  0.198      0.235
+Train: Degrees of Freedom for Error                               248.000    345.000
+Train: Model Degrees of Freedom                                   101.000      4.000
+Train: Total Degrees of Freedom                                   349.000    349.000
+Train: Divisor for ASE                                            698.000    698.000
+Train: Error Function                                             289.020    315.834
+Train: Final Prediction Error                                       0.248      0.155
+Train: Gain                                                        92.431     87.528
+Train: Gini Coefficient                                             0.766      0.712
+Train: Bin-Based Two-Way Kolmogorov-Smirnov Statistic               0.609      0.548
+Train: Kolmogorov-Smirnov Probability Cutoff                        0.473      0.376
+Train: Cumulative Lift                                              1.924      1.875
+Train: Lift                                                         1.801      1.772
+Train: Maximum Absolute Error                                       0.908      0.875
+Train: Misclassification Rate                                       0.198      0.235
+Train: Mean Squared Error                                           0.192      0.154
+Train: Sum of Frequencies                                         349.000    349.000
+Train: Number of Estimated Weights                                101.000      4.000
+Train: Root Average Squared Error                                   0.369      0.390
+Train: Cumulative Percent Response                                 94.286     91.883
+Train: Percent Response                                            88.235     86.818
+Train: Root Final Prediction Error                                  0.498      0.394
+Train: Root Mean Squared Error                                      0.438      0.392
+Train: Schwarz's Bayesian Criterion                               880.383    339.254
+Train: Sum of Squared Errors                                       95.278    106.000
+Train: Sum of Case Weights Times Freq                             698.000    698.000
+Train: Number of Wrong Classifications                             69.000     82.000
+ 
+ 
+Data Role=Valid
+ 
+Statistics                                                         Neural        MBR
+ 
+Valid: Kolmogorov-Smirnov Statistic                                 0.652      0.533
+Valid: Average Squared Error                                        0.147      0.165
+Valid: Roc Index                                                    0.858      0.830
+Valid: Average Error Function                                       0.469      0.508
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff      0.542      0.656
+Valid: Cumulative Percent Captured Response                        16.471     18.824
+Valid: Percent Captured Response                                   10.588      9.176
+Valid: Divisor for VASE                                           350.000    350.000
+Valid: Error Function                                             164.237    177.705
+Valid: Gain                                                        60.131     83.007
+Valid: Gini Coefficient                                             0.716      0.660
+Valid: Bin-Based Two-Way Kolmogorov-Smirnov Statistic               0.641      0.522
+Valid: Kolmogorov-Smirnov Probability Cutoff                        0.490      0.563
+Valid: Cumulative Lift                                              1.601      1.830
+Valid: Lift                                                         2.059      1.784
+Valid: Maximum Absolute Error                                       0.986      1.000
+Valid: Misclassification Rate                                       0.177      0.240
+Valid: Mean Squared Error                                           0.147      0.165
+Valid: Sum of Frequencies                                         175.000    175.000
+Valid: Root Average Squared Error                                   0.383      0.407
+Valid: Cumulative Percent Response                                 77.778     88.889
+Valid: Percent Response                                           100.000     86.667
+Valid: Root Mean Squared Error                                      0.383      0.407
+Valid: Sum of Squared Errors                                       51.358     57.844
+Valid: Sum of Case Weights Times Freq                             350.000    350.000
+Valid: Number of Wrong Classifications                             31.000     42.000
+ 
+ 
+Data Role=Test
+ 
+Statistics                                                         Neural        MBR
+ 
+Test:  Kolmogorov-Smirnov Statistic                                 0.697      0.697
+Test: Average Squared Error                                         0.137      0.144
+Test:  Roc Index                                                    0.876      0.877
+Test: Average Error Function                                        0.475      0.434
+Test:  Bin-Based Two-Way Kolmogorov-Smirnov Probability Cutoff      0.760      0.406
+Test: Cumulative Percent Captured Response                         18.182     19.048
+Test: Percent Captured Response                                     6.061      7.792
+Test: Divisor for TASE                                            132.000    132.000
+Test: Error Function                                               62.753     57.247
+Test: Gain                                                         71.429     79.592
+Test:  Gini Coefficient                                             0.752      0.754
+Test:  Bin-Based Two-Way Kolmogorov-Smirnov Statistic               0.636      0.636
+Test:  Kolmogorov-Smirnov Probability Cutoff                        0.431      0.376
+Test: Cumulative Lift                                               1.714      1.796
+Test: Lift                                                          1.333      1.714
+Test: Maximum Absolute Error                                        0.981      0.938
+Test: Misclassification Rate                                        0.167      0.212
+Test: Lower 95% Conf. Limit for TMISC                                .         0.121
+Test: Upper 95% Conf. Limit for TMISC                                .         0.330
+Test: Mean Squared Error                                            0.137      0.144
+Test: Sum of Frequencies                                           66.000     66.000
+Test: Root Average Squared Error                                    0.370      0.380
+Test: Cumulative Percent Response                                  85.714     89.796
+Test: Percent Response                                             66.667     85.714
+Test: Root Mean Squared Error                                       0.370      0.380
+Test: Sum of Squared Errors                                        18.075     19.016
+Test: Sum of Case Weights Times Freq                              132.000    132.000
+Test: Number of Wrong Classifications                              11.000     14.000
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Event Classification Table
+Model Selection based on Train: Misclassification Rate (_MISC_)
+ 
+Model     Model             Data                                         False       True        False       True
+Node      Description       Role        Target       Target Label      Negative    Negative    Positive    Positive
+ 
+MBR       MBR               TRAIN       REP_A16    Replacement: A16       31          127         51          140
+MBR       MBR               VALIDATE    REP_A16    Replacement: A16       16           64         26           69
+Neural    Neural Network    TRAIN       REP_A16    Replacement: A16       31          140         38          140
+Neural    Neural Network    VALIDATE    REP_A16    Replacement: A16        6           65         25           79
+
+
+*------------------------------------------------------------*
+* Score Output
+*------------------------------------------------------------*
+
+
+*------------------------------------------------------------*
+* Report Output
+*------------------------------------------------------------*
